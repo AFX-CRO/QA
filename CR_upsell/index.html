@@ -23,11 +23,24 @@
       <h1>Converstion Rate Test</h1>
       <h2>VWO - Landing page and Upsell page</h2>
 
+<h3 class="test">test here</h3>
       <p>This page is representing a landing page.</p>
       <p>The VWO campaign for this test is to see if we can register CR% with vwo.</p>
+      <p>The vwo campaign is: 'CYM (ALR_msterclass1col_1017) Upsell Check Test1-1VAR'.</p>
+      <p>It will be archived after the results of the test are in.</p>
       <p>The intializing trigger is the URL and the end trigger is a javascript snippet on the upsell page of the following order form:</p>
-      <h3><a href="https://reports.agorafinancial.com/TEK_TESThalofi_1col_1017/rcheck/">ORDER LINK</a></h3>
+      <h3><a href="https://orders.chooseyourselffinancial.com/ALR_masterclass1col_1017/rsTEST808/index.htm?pageNumber=2">ORDER LINK</a></h3>
       <br>
     </div>
+
+    <script>
+    $(document).ready(function() {
+      $('.test').click(function(){
+        console.log('fired function for vwo');
+         window._vis_opt_queue = window._vis_opt_queue || [];
+        window._vis_opt_queue.push(function() {_vis_opt_goal_conversion(201);});
+      });
+    });
+    </script>
 </body>      
 </html>
