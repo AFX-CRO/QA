@@ -1,14 +1,14 @@
 # Iris Html (#10) VWO Headline Test
 Please use the *index.html* as a starting point for this project. The *original-pagesource.html* file is a copy of the view page source of this link: https://pro.chooseyourselffinancial.com/p/TreePreview/Preview/652703/True 
 
-## This folders preview link is: https://afx-cro.github.io/QA/CYM/ALR_masterclass1col_1017/HTML/
+### This folders preview link is: https://afx-cro.github.io/QA/CYM/ALR_masterclass1col_1017/HTML/
 
 ## Doc Index
 1. [Using this repo](#Using)  
 2. [Where to put the css](#css)   
-3. [Adding html](#html)  
-5. [Secure](#Secure)
-6. [Framework](#framework)
+3. [Adding html](#html) 
+4. [Secure Links](#Secure) 
+5. [Framework](#framework)
 6. [Browser Support](#support)
 7. [Transfering to vwo](#vwo)
 
@@ -29,7 +29,7 @@ Please use the *index.html* as a starting point for this project. The *original-
 	Currently our pages use the foundation xy grid framework. It is in the styles1-1 sheet.
 
 
-##  <a id="secure" name="secure">Secure</a>
+##  <a id="Secure" name="Secure">Secure</a>
 	On the final product all links should be https and not http.
 
 
