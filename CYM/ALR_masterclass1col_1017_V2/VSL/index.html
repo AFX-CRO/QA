@@ -78,35 +78,35 @@
           line-height: 55px;
         }
 
+      }
+
+      @media screen and (max-width:435px){
+        h1{
+          font-size: 30px;
+          line-height: 35px;
         }
 
-        @media screen and (max-width:435px){
-          h1{
-            font-size: 30px;
-            line-height: 35px;
-          }
+      }
 
-          }
+      @media screen and (max-width:360px){
 
-          @media screen and (max-width:360px){
+        .headline p{
+          font-size: 18px;
+        }
 
-            .headline p{
-              font-size: 18px;
-            }
+      }
 
-            }
+      @media screen and (max-width:320px){
+        h1{
+          font-size: 25px;
+          line-height: 30px;
+        }
 
-            @media screen and (max-width:320px){
-              h1{
-                font-size: 25px;
-                line-height: 30px;
-              }
+        .headline p{
+          font-size: 18px;
+        }
 
-              .headline p{
-                font-size: 18px;
-              }
-
-              }
+      }
 
     /*----------=============  /Queries  =============--------*/
 
@@ -115,7 +115,7 @@
         font-family: 'Josefin Sans', sans-serif;
         background-image: url("../IMAGES/ACT_CryptoMasterClass_DesignTest_Background.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         margin-top: -3.1em;
       }
       
@@ -136,7 +136,7 @@
 
       .header-inner-middle {
         background: #42cbdb;
-        opacity: .77;
+        opacity: .88;
       }
 
       .header-inner-middle  img {
@@ -183,6 +183,72 @@
         margin-left: 0;
         padding: 10px 5px;
         text-transform: uppercase;
+      }
+
+      /*----------============= Queriers  =============--------*/
+      @media screen and (max-width:750px){
+        .header-inner-middle  img {
+          display: none;
+        }
+
+        .headline-inner p.header-inner-msg {
+          margin: 15px 5px 0;
+        }
+        
+        .headline .warning {
+          font-size: 22px;
+        }
+      }
+
+      @media screen and (max-width:435px){
+        .headline-inner { 
+          background: #013667;
+        }
+
+        .headline-inner p.header-inner-top {
+          font-size: 30px;
+        }
+
+        .headline-inner h1 {
+          font-size: 34px;
+          line-height: 40px;
+          margin: 15px 0px 10px;
+        }
+
+        .headline-inner h1 span {
+          font-size: 40px;
+        }
+
+        .headline-inner p.header-inner-msg {
+          font-size: 28px;
+          line-height: 32px;
+        }
+        
+        .headline .warning {
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width:360px){
+
+        .headline-inner p.header-inner-top {
+          font-size: 26px;
+        }
+
+        .headline-inner h1 {
+          font-size: 30px;
+          line-height: 34px;
+        }
+
+        .headline-inner h1 span {
+          font-size: 34px;
+        }
+
+        .headline-inner p.header-inner-msg {
+          font-size: 24px;
+          line-height: 28px;
+        }
+
       }
     /*vwo*/
   </style> 
@@ -235,18 +301,19 @@
           <div class="large-4 columns"><img src="../IMAGES/millionaire-man.png"></div>
           <div class="large-8 columns">
             <h1>Eccentric Millionaire <br class="hidebr" />
-              Reveals His Secret <br class="hidebr" /><span>$1.8 Million</span><br class="hidebr" />
+              Reveals His Secret <br /><span>$1.8 Million</span><br class="hidebr" />
               Cryptocurrency Script</h1>
           </div>
       </div>
 
       <p class="header-inner-msg">“If you follow my script below, you could turn <br class="hidebr" />
           $100 into <i><u>a retirement fortune</u></i> in the next 12 months… <br class="hidebr" />
-          while cutting your risk down to virtually zero!”<br class="hidebr" />
+          while cutting your risk down to virtually zero!”<br />
           <span class="author">- James Altucher, crypto millionaire</span></p>
     </div>
     
     <p class="warning"><strong><u>WARNING:</u></strong> This opportunity disappears on February 2, 2018 at 4p.m.</p>
+  </div>
     <!--== vwo ==-->
 <!--====||  End Headline  ||====-->
 
@@ -297,7 +364,6 @@
   <!--=== /Video Script ==-->
 
   <!--== vwo / Remoeved some text from here / ==--> 
-  </div>
 
     <div class="unhide">
       <div class="subnow pop">Subscribe Now</div>
