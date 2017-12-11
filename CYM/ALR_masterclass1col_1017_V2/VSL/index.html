@@ -120,6 +120,7 @@
       }
       
       .headline-inner p {
+          font-family: 'Josefin Sans', sans-serif;
           color: #fff;
           text-align: left;
       }
@@ -129,13 +130,60 @@
         font-style: italic;
         font-size: 33px;
         padding: 20px 0 0;
+        margin-bottom: 0.6em;
+        margin-left: 0.7em;
       }  
+
+      .header-inner-middle {
+        background: #42cbdb;
+        opacity: .77;
+      }
+
+      .header-inner-middle  img {
+        margin-top: 12px;
+      }
 
       .headline-inner h1 {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 40px;
+        line-height: 50px;
         color: #001060;
+        margin-top: 0.7em;
+        text-transform: uppercase;
       }  
+      
+      .headline-inner h1 span {
+        font-size: 50px;
+        color: #fff;
+        text-shadow: -4px 0px 0px rgba(0, 16, 96, 1);
+      }
+
+      .headline-inner p.header-inner-msg {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+      }
+
+      .headline-inner p.header-inner-msg .author {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      
+      .headline .warning {
+        display: block;
+        width: 100%;
+        font-size: 23px;
+        color: #fff;
+        background: #7d0000;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 10px 5px;
+        text-transform: uppercase;
+      }
     /*vwo*/
   </style> 
 </head>
@@ -178,16 +226,28 @@
   <!-- END EXIT HOVER CODE -->
 
 <!--====||  Start Headline  ||====-->
+  <!--== vwo ==-->
   <div class="headline">
     <div class="headline-inner">
       <p class="header-inner-top"><em>FOR THE FIRST TIME EVER&hellip;</em></p>
 
-      <h1>Eccentric Millionaire Reveals<br class="hidebr" />
-      His Secret <font color="#006838">$1.8 Million</font><br class="hidebr" />
-      Cryptocurrency Script</h1>
+      <div class="row header-inner-middle">
+          <div class="large-4 columns"><img src="../IMAGES/millionaire-man.png"></div>
+          <div class="large-8 columns">
+            <h1>Eccentric Millionaire <br class="hidebr" />
+              Reveals His Secret <br class="hidebr" /><span>$1.8 Million</span><br class="hidebr" />
+              Cryptocurrency Script</h1>
+          </div>
+      </div>
 
-      <p><strong><font color="red">WARNING:</font> This opportunity disappears on February 2, 2018 at 4p.m.</strong></p>
+      <p class="header-inner-msg">“If you follow my script below, you could turn <br class="hidebr" />
+          $100 into <i><u>a retirement fortune</u></i> in the next 12 months… <br class="hidebr" />
+          while cutting your risk down to virtually zero!”<br class="hidebr" />
+          <span class="author">- James Altucher, crypto millionaire</span></p>
     </div>
+    
+    <p class="warning"><strong><u>WARNING:</u></strong> This opportunity disappears on February 2, 2018 at 4p.m.</p>
+    <!--== vwo ==-->
 <!--====||  End Headline  ||====-->
 
   <!--=== Video ===-->
@@ -235,10 +295,8 @@
         });
       </script>
   <!--=== /Video Script ==-->
-  
-    <p><strong>&ldquo;If you follow my script below, you could turn $100 into a retirement fortune in<br class="hidebr" />
-    the next 12 months&hellip; while cutting your risk down to virtually zero!&rdquo;</strong><br class="hidebr" />
-    <em>- James Altucher, crypto millionaire</em></p>
+
+  <!--== vwo / Remoeved some text from here / ==--> 
   </div>
 
     <div class="unhide">
