@@ -44,8 +44,8 @@ Please use the *index.html* as a starting point for this project. The *original-
 
 
 ## <a id="transferables" name="transferables">Codes to copy to VWO</a>
- Add this in the bottom section of <style> tag inside the <head> tag
-```html
+ Add this in the bottom section of style tag inside the head tag
+```css
 /*vwo*/
 	.headline-inner {
 		font-family: 'Josefin Sans', sans-serif;
@@ -188,7 +188,7 @@ Please use the *index.html* as a starting point for this project. The *original-
 	}
 /*vwo*/
 ```
-Replace whatever between  <!--====||  Start Headline  ||====--> to <!--====||  End Headline  ||====-->
+Replace whatever between  Start Headline to End Headline
 
 ```html
 <!--====||  Start Headline  ||====-->
@@ -218,7 +218,7 @@ Replace whatever between  <!--====||  Start Headline  ||====--> to <!--====||  E
 <!--====||  End Headline  ||====-->
 
 ```
-Replace whatever beetween <!--=== /Video Script ==--> to <div class="unhide">
+Replace whatever beetween Video Script to <div class="unhide">
 
 ```html
 <!--=== /Video Script ==-->
