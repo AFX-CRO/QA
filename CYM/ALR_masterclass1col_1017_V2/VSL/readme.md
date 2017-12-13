@@ -44,151 +44,161 @@ Please use the *index.html* as a starting point for this project. The *original-
 
 
 ## <a id="transferables" name="transferables">Codes to copy to VWO</a>
- Add this in the bottom section of style tag inside the head tag
+Section # 1
+
+```html
+<!--===== / vwo =====-->
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Libre+Franklin|Josefin+Sans" rel="stylesheet">
+<!--===== / vwo =====-->
+```
+
+ Section # 2
+
 ```css
 /*vwo*/
-	.headline-inner {
+.headline-inner {
+	font-family: 'Josefin Sans', sans-serif;
+	background-image: url("https://d13p2xj50zkyqm.cloudfront.net/promos/LF/ALR/CryptoMasterClass_0817/ACT_CryptoMasterClass_DesignTest_Background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-top: -3.1em;
+}
+
+.headline-inner p {
 		font-family: 'Josefin Sans', sans-serif;
-		background-image: url("https://d13p2xj50zkyqm.cloudfront.net/promos/LF/ALR/CryptoMasterClass_0817/ACT_CryptoMasterClass_DesignTest_Background.jpg");
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		margin-top: -3.1em;
-	}
-	
-	.headline-inner p {
-			font-family: 'Josefin Sans', sans-serif;
-			color: #fff;
-			text-align: left;
-	}
-	
-	.headline-inner p.header-inner-top {
-		font-weight: 700;
-		font-style: italic;
-		font-size: 33px;
-		padding: 20px 0 0;
-		margin-bottom: 0.6em;
-		margin-left: 0.7em;
-	}  
-
-	.header-inner-middle {
-		background: #42cbdb;
-		opacity: .88;
-	}
-
-	.header-inner-middle  img {
-		margin-top: 12px;
-	}
-
-	.headline-inner h1 {
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 40px;
-		line-height: 50px;
-		color: #001060;
-		margin-top: 0.7em;
-		text-transform: uppercase;
-	}  
-	
-	.headline-inner h1 span {
-		font-size: 50px;
 		color: #fff;
-		text-shadow: -4px 0px 0px rgba(0, 16, 96, 1);
+		text-align: left;
+}
+
+.headline-inner p.header-inner-top {
+	font-weight: 700;
+	font-style: italic;
+	font-size: 33px;
+	padding: 20px 0 0;
+	margin-bottom: 0.6em;
+	margin-left: 0.7em;
+}  
+
+.header-inner-middle {
+	background: #42cbdb;
+	opacity: .88;
+}
+
+.header-inner-middle  img {
+	margin-top: 12px;
+}
+
+.headline-inner h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	line-height: 50px;
+	color: #001060;
+	margin-top: 0.7em;
+	text-transform: uppercase;
+}  
+
+.headline-inner h1 span {
+	font-size: 50px;
+	color: #fff;
+	text-shadow: -4px 0px 0px rgba(0, 16, 96, 1);
+}
+
+.headline-inner p.header-inner-msg {
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+}
+
+.headline-inner p.header-inner-msg .author {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.headline .warning {
+	display: block;
+	width: 100%;
+	font-size: 23px;
+	color: #fff;
+	background: #7d0000;
+	margin-top: 0;
+	margin-left: 0;
+	padding: 10px 5px;
+	text-transform: uppercase;
+}
+
+/*----------============= Queriers  =============--------*/
+@media screen and (max-width:750px){
+	.header-inner-middle  img {
+		display: none;
 	}
 
 	.headline-inner p.header-inner-msg {
-		font-size: 30px;
-		line-height: 40px;
-		text-align: center;
-		font-weight: 700;
-		margin-bottom: 0;
-		padding-bottom: 15px;
-	}
-
-	.headline-inner p.header-inner-msg .author {
-		font-size: 20px;
-		text-transform: uppercase;
-		font-weight: 500;
+		margin: 15px 5px 0;
 	}
 	
 	.headline .warning {
-		display: block;
-		width: 100%;
-		font-size: 23px;
-		color: #fff;
-		background: #7d0000;
-		margin-top: 0;
-		margin-left: 0;
-		padding: 10px 5px;
-		text-transform: uppercase;
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width:435px){
+	.headline-inner { 
+		background: #013667;
 	}
 
-	/*----------============= Queriers  =============--------*/
-	@media screen and (max-width:750px){
-		.header-inner-middle  img {
-			display: none;
-		}
-
-		.headline-inner p.header-inner-msg {
-			margin: 15px 5px 0;
-		}
-		
-		.headline .warning {
-			font-size: 22px;
-		}
+	.headline-inner p.header-inner-top {
+		font-size: 30px;
 	}
 
-	@media screen and (max-width:435px){
-		.headline-inner { 
-			background: #013667;
-		}
-
-		.headline-inner p.header-inner-top {
-			font-size: 30px;
-		}
-
-		.headline-inner h1 {
-			font-size: 34px;
-			line-height: 40px;
-			margin: 15px 0px 10px;
-		}
-
-		.headline-inner h1 span {
-			font-size: 40px;
-		}
-
-		.headline-inner p.header-inner-msg {
-			font-size: 28px;
-			line-height: 32px;
-		}
-		
-		.headline .warning {
-			font-size: 20px;
-		}
+	.headline-inner h1 {
+		font-size: 34px;
+		line-height: 40px;
+		margin: 15px 0px 10px;
 	}
 
-	@media screen and (max-width:360px){
-
-		.headline-inner p.header-inner-top {
-			font-size: 26px;
-		}
-
-		.headline-inner h1 {
-			font-size: 30px;
-			line-height: 34px;
-		}
-
-		.headline-inner h1 span {
-			font-size: 34px;
-		}
-
-		.headline-inner p.header-inner-msg {
-			font-size: 24px;
-			line-height: 28px;
-		}
-
+	.headline-inner h1 span {
+		font-size: 40px;
 	}
+
+	.headline-inner p.header-inner-msg {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	
+	.headline .warning {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:360px){
+
+	.headline-inner p.header-inner-top {
+		font-size: 26px;
+	}
+
+	.headline-inner h1 {
+		font-size: 30px;
+		line-height: 34px;
+	}
+
+	.headline-inner h1 span {
+		font-size: 34px;
+	}
+
+	.headline-inner p.header-inner-msg {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+}
 /*vwo*/
 ```
-Replace whatever between  Start Headline to End Headline
+
+Section # 3
 
 ```html
 <!--====||  Start Headline  ||====-->
@@ -218,7 +228,8 @@ Replace whatever between  Start Headline to End Headline
 <!--====||  End Headline  ||====-->
 
 ```
-Replace whatever beetween Video Script to <div class="unhide">
+
+Section # 4
 
 ```html
 <!--=== /Video Script ==-->
