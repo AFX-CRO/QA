@@ -11,7 +11,7 @@ Please use the *index.html* as a starting point for this project. The *original-
 5. [Framework](#framework)
 6. [Browser Support](#support)
 7. [Transfering to vwo](#vwo)
-8. [Codes to transfer to vwo](#transferables)
+8. [Codes to copy to vwo](#transferables)
 
 
 ##  <a id="using" name="Using">Using this repo</a>
@@ -43,7 +43,7 @@ Please use the *index.html* as a starting point for this project. The *original-
   	   /*vwo*/ and updating the <!-- vwo →<!-- / vwo → html elements. 
 
 
-## <a id="transferables" name="transferables">Codes to copy to VWO</a>
+## <a id="transferables" name="transferables">Codes to copy to vwo</a>
 Section # 1
 
 ```html
@@ -90,7 +90,7 @@ Section # 1
 
 .headline-inner h1 {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 40px;
+	font-size: 38px;
 	line-height: 50px;
 	color: #001060;
 	margin-top: 0.7em;
@@ -131,11 +131,13 @@ Section # 1
 }
 
 /*----------============= Queriers  =============--------*/
-@media screen and (max-width:750px){
+@media screen and (max-width:1024px){
 	.header-inner-middle  img {
 		display: none;
 	}
+}
 
+@media screen and (max-width:750px){
 	.headline-inner p.header-inner-msg {
 		margin: 15px 5px 0;
 	}
@@ -151,47 +153,61 @@ Section # 1
 	}
 
 	.headline-inner p.header-inner-top {
-		font-size: 30px;
+		font-size: 24px;
+		margin-bottom: 0.4em;
 	}
 
 	.headline-inner h1 {
-		font-size: 34px;
-		line-height: 40px;
+		font-size: 27px;
+		line-height: 34px;
 		margin: 15px 0px 10px;
 	}
 
 	.headline-inner h1 span {
-		font-size: 40px;
+		font-size: 36px;
 	}
 
 	.headline-inner p.header-inner-msg {
-		font-size: 28px;
-		line-height: 32px;
+		font-size: 24px;
+		line-height: 28px;
 	}
 	
 	.headline .warning {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
 @media screen and (max-width:360px){
 
 	.headline-inner p.header-inner-top {
-		font-size: 26px;
+		font-size: 22px;
+		margin-bottom: 0.2em;
 	}
 
 	.headline-inner h1 {
-		font-size: 30px;
-		line-height: 34px;
+		font-size: 24px;
+		line-height: 30px;
 	}
 
 	.headline-inner h1 span {
-		font-size: 34px;
+		font-size: 30px;
 	}
 
 	.headline-inner p.header-inner-msg {
-		font-size: 24px;
-		line-height: 28px;
+		font-size: 22px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+
+	.headline-inner p.header-inner-msg .author {
+		font-size: 16px;
+		font-weight: 400;
+		padding-top: 10px;
+		display: block;
+	}
+
+	.headline .warning {
+		font-size: 16px;
 	}
 
 }
