@@ -46,9 +46,7 @@ Please use the *index.html* as a starting point for this project. The *original-
 ## <a id="transferables" name="transferables">Codes to copy to VWO</a>
 
 	Add this in the bottom section of <style> tag inside the <head> tag
-	
-	```
-	/*vwo*/
+	```/*vwo*/
 		.headline-inner {
 			font-family: 'Josefin Sans', sans-serif;
 			background-image: url("https://d13p2xj50zkyqm.cloudfront.net/promos/LF/ALR/CryptoMasterClass_0817/ACT_CryptoMasterClass_DesignTest_Background.jpg");
@@ -192,8 +190,7 @@ Please use the *index.html* as a starting point for this project. The *original-
 	```
 	Replace whatever between  <!--====||  Start Headline  ||====--> to <!--====||  End Headline  ||====-->
 
-	```
-	<!--====||  Start Headline  ||====-->
+	```<!--====||  Start Headline  ||====-->
   <!--== vwo ==-->
   <div class="headline">
     <div class="headline-inner">
@@ -222,8 +219,7 @@ Please use the *index.html* as a starting point for this project. The *original-
 	```
 	Replace whatever beetween <!--=== /Video Script ==--> to <div class="unhide">
 
-	```
-	<!--=== /Video Script ==-->
+	```<!--=== /Video Script ==-->
 
   <!--== vwo / Remoeved some text from here / ==--> 
 
