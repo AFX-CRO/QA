@@ -8,6 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/promos_1/LF/ALR/OF_TEST/ALR-test.css">
 <script type="text/javascript" src="https://research.agorafinancial.com/research/afp-js/order.js"></script>
+<!-- VWO -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+<!-- VWO -->
 
 <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js"></script>
 <style>
@@ -247,7 +250,77 @@ font-weight:bold;
   }
 }
 
+/** VWO */
 
+.billing-terms{
+    border: 5px solid #ab6927; 
+    border-top: 0;
+    background: #f8efe6;
+}
+
+.billing-terms .inner{
+    padding: 10px 10% 15px;
+}
+.billing-terms h1 {
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-size: 25px;
+    color: #fff; 
+    background-image: linear-gradient(to right, #ab6927, #ff7f00, #ab6927); 
+    margin-left: -1px; 
+    margin-right: -1px;
+}
+.billing-terms h1:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 15px #ff7f00;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+}
+.billing-terms p {
+    line-height: 1.6em;
+}
+.billing-terms input[type=checkbox]:checked  {
+  display: none;
+}
+.billing-terms label {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin: 5px;
+  margin-left: 15%;
+}
+@media (min-width:100px) and (max-width:680px){
+.billing-terms label {
+    margin-left: 0;
+}
+}
+.billing-terms label:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background-color: #3c9afc;
+  border-radius: 3px;
+}
+.billing-terms input[type=checkbox]:checked + label:before,
+.billing-terms label:hover:before {
+  content: "\2713";
+  color: #fff;
+  text-align: center;
+  line-height: 13px;
+  font-size: 10px;
+}
+/** VWO */
 
 
 /*----------============= / FAQ  =============--------*/
@@ -931,8 +1004,17 @@ font-weight:bold;
     
   </div>
   <div style="padding:0; margin:0; text-align:left;">
-  <p><strong>Billing Terms:</strong> Once you accept your subscription to <em>The Altucher Report</em>, your credit card will be billed immediately. Then, when your subscription is about to expire, we will automatically bill your card for another term at the same rate. 
-  This “auto-renew” feature does not obligate you in any way. What’s more, we’ll give you 30 days after your “auto-renew” charge to receive that year's subscription fee back in full.</p>
+      <div class="billing-terms" >
+        <h1>Billing Terms:</h1> 
+        <div class="inner">
+            <p>Once you accept your subscription to <em>The Altucher Report</em>, your credit card will be billed immediately.</p>
+            <p>Then, when your subscription is about to expire, <span style="font-size: 1.5em; font-weight: bold;">we will automatically bill your card for another term at the same rate.</span> </p>
+            <p>This “auto-renew” feature does not obligate you in any way.</p> 
+            <p>What’s more, we’ll give you 30 days after your “auto-renew” charge to receive that year's subscription fee back in full.</p>
+
+            <p style="font-family: 'Open Sans Condensed', sans-serif;"><input type="checkbox" name="acceptance" checked> <label><strong>I have read and agree to the above billing terms.</strong></label></p>
+        </div>
+      </div>
   </div>
 
 
