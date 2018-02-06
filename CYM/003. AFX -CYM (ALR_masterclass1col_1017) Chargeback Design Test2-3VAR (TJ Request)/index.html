@@ -256,6 +256,8 @@ font-weight:bold;
     border: 5px solid #ab6927;
     border-top: 0;
     background: #f8efe6;
+    width: 748px;
+    margin-left: -24px;
 }
 
 .billing-terms .inner{
@@ -296,12 +298,21 @@ font-weight:bold;
   margin: 5px;
   margin-left: 15%;
 }
+@media (min-width:100px) and (max-width:768px){
+.billing-terms {
+  width: 100%;
+  margin-left: 0;
+}
+}
 @media (min-width:100px) and (max-width:680px){
 .billing-terms label {
     margin-left: 0;
 }
 .billing-terms .inner{
     padding: 10px 5% 15px;
+}
+.billing-terms {
+
 }
 }
 .billing-terms label:before {
