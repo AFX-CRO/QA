@@ -1,0 +1,285 @@
+
+<html>
+<head>
+  <meta charset="utf-8" /> <!-- for working locally -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Eccentric Millionaire Reveals His Secret</title>
+
+  <!--=====|||||     Scripts to Remove on Iris  |||||=====-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <!--=====|||||     Scripts to Remove on Iris  |||||=====-->
+
+
+   <!--=====|||||     Scripts to Stay  |||||=====-->
+    <script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/promo_function.js"></script>
+  <!--=====|||||     Scripts to Stay  |||||======-->
+
+
+    <!--===== /Exitpop Script =====-->
+    <script>
+      setTimeout(function(){
+        function addEvent(obj, evt, fn) {
+           if (obj.addEventListener) {
+               obj.addEventListener(evt, fn, false);
+           }
+           else if (obj.attachEvent) {
+               obj.attachEvent("on" + evt, fn);
+           }
+        }
+        addEvent(document, "mouseout", function(e) {
+           e = e ? e : window.event;
+           var from = e.relatedTarget || e.toElement;
+           if (!from || from.nodeName == "HTML") {
+              $('#popmessage').show();
+              $('#popmessage').trigger('lytics_event');
+              $('#popmessage').children().show();
+            }
+        });
+        $('#exitButton,#watch_video').click(function(){
+          $('#popmessage').hide();
+          $('#popmessage').children().hide();
+          $('#popmessage').remove();
+        });
+     }, 60000);
+    </script>
+  <!--===== /Exitpop Script =====-->
+
+  <!--=====  SCRIPT ====-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--=====  / SCRIPT ====-->
+  <!--=====  CSS ====-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--=====  / CSS ====-->
+  <!--=====  Fonts ====-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
+  <!--=====  / Fonts ====-->
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
+    h1 { font-family: 'Raleway', sans-serif; font-size: 64px; font-weight: 700; color: #004a8b; text-align: center;}
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 44px;
+      font-weight: 900;
+      color: #004a8b;
+      text-align: center;
+      padding: 20px 0;
+      clear: both;
+    }
+    @media (max-width: 768px) {
+      h2 { padding: 0; margin-top: -20px;}
+    }
+    h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #004a8b;
+      margin-top: 0;
+    }
+    @media (max-width: 768px) {
+    h3 { margin-top: 20px; }
+    }
+    h4 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #7b99b3;
+      margin-bottom: 25px;
+    }
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      color: #004a8b;
+    }
+    .visible-xxs { display: none;}
+    @media (max-width: 360px) {
+      .visible-xxs { display: block;}
+      .hidden-xxs { display: none;}
+    }
+    .content { width: 1060px; max-width: 90%; margin: 0px auto;}
+    @media (max-width: 460px) {
+      .content { max-width: 100%;}
+    }
+
+    .video {
+      max-width: 75%;
+      margin: 20px auto;
+      border: 5px solid #004a8b;
+      position: relative;
+    }
+
+    .video:after {
+      content: "";
+      width:0px;
+      height:0px;
+      border-left:20px solid transparent;
+      border-right:20px solid transparent;
+      border-top:10px solid #004a8b;
+      position:absolute;
+      bottom:-15px;
+      left: 50%;
+      margin-left: -12px;
+    }
+    @media (max-width: 1200px) {
+     .video:after { bottom:-13px; }
+    }
+
+    .btn-main {
+      font-family: 'Raleway', sans-serif;
+      font-size: 21px;
+      font-weight: bold;
+      font-style: italic;
+      color: #fff;
+      display: block;
+      width: 80%;
+      max-width:380px;
+      margin: 0px auto;
+      background: #ee7700; /* Old browsers */
+      background: -moz-linear-gradient(top, #ee7700 0%, #ea5800 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #ee7700 0%,#ea5800 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #ee7700 0%,#ea5800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7700', endColorstr='#ea5800',GradientType=0 ); /* IE6-9 */
+    }
+    .btn-main:hover, .btn-read-more:hover {
+      color: #fff;
+    }
+
+    .btn-read-more {
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      background: #004a8b; /* Old browsers */
+      background: -moz-linear-gradient(top, #004a8b 0%, #072847 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #004a8b 0%,#072847 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #004a8b 0%,#072847 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7700', endColorstr='#ea5800',GradientType=0 ); /* IE6-9 */
+    }
+
+    .testimonials {
+      width: 100%;
+      max-width: 1760px;
+      margin: 20px auto 40px;
+    }
+
+    .testimonials p{
+      font-family: 'Raleway', sans-serif;
+      font-size: 22px;
+      color: #004a8b;
+    }
+
+    .testimonials .testimonial {
+      background: url("./images/testimonials-bg.png") no-repeat;
+      background-size: 100% 100%;
+      padding: 20px;
+    }
+
+    .testimonials .testimonial p{
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .testimonials p.author {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .entry {
+      margin: 20px auto 35px;
+    }
+    .entry-links {width: 1060px; max-width: 90%; margin: 0 auto;}
+    @media (max-width: 768px) {
+      .entry-links { max-width: 100%; background: #f2f2f2; display: block; height: 40px; padding: 8px 10px; margin: 0 auto;}
+    }
+    .entries-link {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      color: #004a8b;
+      font-weight: bold;
+    }
+    /*vwo*/ /*vwo*/
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <header><img src="./images/headline-bg-compressed.jpg" class="img-responsive hidden-xxs"><img src="./images/headline-bg-mobile.jpg" class="img-responsive visible-xxs"></header>
+
+      <div class="content">
+        <div class="video">
+          <img src="./images/video.jpg" class="img-responsive">
+        </div>
+        <a class="btn btn-main" href="">Add To Order</a>
+
+        <div class="testimonials">
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
+        </div>
+        <!-- Testimonials End Here -->
+
+        <h2>Read Our Updates Below!</h2>
+        <div class="entry row">
+          <div class="col-sm-2">
+            <img src="./images/thumb-face.jpg" class="img-responsive center-block" >
+          </div>
+          <div class="col-sm-10">
+            <h3>Q&A WITH MICHAEL TITLE</h3>
+            <h4>by Author Name | April 1,2017</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <a href="" class="btn btn-read-more">Read More</a>
+          </div>
+        </div>
+        <div class="entry row">
+          <div class="col-sm-2">
+            <img src="./images/thumb-face.jpg" class="img-responsive center-block" >
+          </div>
+          <div class="col-sm-10">
+            <h3>Q&A WITH MICHAEL TITLE</h3>
+            <h4>by Author Name | April 1,2017</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <a href="" class="btn btn-read-more">Read More</a>
+          </div>
+        </div>
+        <div class="entry row">
+          <div class="col-sm-2">
+            <img src="./images/thumb-face.jpg" class="img-responsive center-block" >
+          </div>
+          <div class="col-sm-10">
+            <h3>Q&A WITH MICHAEL TITLE</h3>
+            <h4>by Author Name | April 1,2017</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <a href="" class="btn btn-read-more">Read More</a>
+          </div>
+        </div>
+        <!-- Entry Ends Here -->
+      </div>
+      <!-- Content -->
+
+      <div class="entry-links">
+        <a href="" class="entries-link pull-left">« Older Entries</a>
+
+        <a href="" class="entries-link pull-right">« New Entries</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
