@@ -56,63 +56,27 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
   <!--=====  / Fonts ====-->
   <style>
-    body {
-      font-family: 'Raleway', sans-serif;
-    }
-    h1 { font-family: 'Raleway', sans-serif; font-size: 50px; font-weight: 700; color: #004a8b; text-align: center;}
-    @media (max-width: 768px) {
-      h1 { font-size: 22px; }
-    }
-    h2 {
-      font-family: 'Raleway', sans-serif;
-      font-size: 44px;
-      font-weight: 900;
-      color: #004a8b;
-      text-align: center;
-      padding: 20px 0;
-      clear: both;
-    }
-    @media (max-width: 768px) {
-      h2 { padding: 0; margin-top: -20px;}
-    }
-    h3 {
-      font-family: 'Raleway', sans-serif;
-      font-size: 26px;
-      font-weight: 700;
-      color: #004a8b;
-      margin-top: 0;
-    }
-    @media (max-width: 768px) {
-    h3 { margin-top: 20px; }
-    }
-    h4 {
-      font-family: 'Raleway', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: #7b99b3;
-      margin-bottom: 25px;
-    }
-    p {
-      font-family: 'Raleway', sans-serif;
-      font-size: 18px;
-      color: #004a8b;
-    }
-    .visible-xxs { display: none;}
-    @media (max-width: 360px) {
-      .visible-xxs { display: block;}
-      .hidden-xxs { display: none;}
-    }
-    .content { width: 1060px; max-width: 90%; margin: 0px auto;}
-    @media (max-width: 460px) {
-      .content { max-width: 100%;}
-    }
+    body { font-family: 'Raleway', sans-serif; }
 
-    .video {
-      max-width: 75%;
-      margin: 20px auto;
-      border: 5px solid #004a8b;
-      position: relative;
-    }
+    h1 { font-family: 'Raleway', sans-serif; font-size: 50px; font-weight: 700; color: #004a8b; text-align: center; }
+    @media (max-width: 768px) { h1 { font-size: 22px; } }
+
+    h2 { font-family: 'Raleway', sans-serif; font-size: 44px; font-weight: 900; color: #004a8b; text-align: center; padding: 20px 0; clear: both; }
+    @media (max-width: 768px) { h2 { padding: 0; margin-top: -20px; } }
+
+    h3 { font-family: 'Raleway', sans-serif; font-size: 26px; font-weight: 700; color: #004a8b; margin-top: 0; }
+    @media (max-width: 768px) { h3 { margin-top: 20px; } }
+
+    h4 { font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 400; color: #7b99b3; margin-bottom: 25px; }
+    p { font-family: 'Raleway', sans-serif; font-size: 18px; color: #004a8b; }
+
+    .visible-xxs { display: none; }
+    @media (max-width: 360px) { .visible-xxs { display: block; } .hidden-xxs { display: none; } }
+
+    .content { width: 1060px; max-width: 90%; margin: 0px auto; }
+    @media (max-width: 460px) { .content { max-width: 100%;} }
+
+    .video { max-width: 75%; margin: 20px auto; border: 5px solid #004a8b; position: relative; }
 
     .video:after {
       content: "";
@@ -126,9 +90,7 @@
       left: 50%;
       margin-left: -12px;
     }
-    @media (max-width: 1200px) {
-     .video:after { bottom:-13px; }
-    }
+    @media (max-width: 1200px) { .video:after { bottom:-13px; } }
 
     .btn-main {
       font-family: 'Raleway', sans-serif;
@@ -146,9 +108,8 @@
       background: linear-gradient(to bottom, #ee7700 0%,#ea5800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7700', endColorstr='#ea5800',GradientType=0 ); /* IE6-9 */
     }
-    .btn-main:hover, .btn-read-more:hover {
-      color: #fff;
-    }
+
+    .btn-main:hover, .btn-read-more:hover { color: #fff; }
 
     .btn-read-more {
       color: #fff;
@@ -161,47 +122,23 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7700', endColorstr='#ea5800',GradientType=0 ); /* IE6-9 */
     }
 
-    .testimonials {
-      width: 100%;
-      max-width: 1760px;
-      margin: 20px auto 40px;
+    .testimonials { width: 100%; max-width: 1760px; margin: 20px auto 40px;
     }
 
-    .testimonials p{
-      font-family: 'Raleway', sans-serif;
-      font-size: 22px;
-      color: #004a8b;
-    }
+    .testimonials p{ font-family: 'Raleway', sans-serif; font-size: 22px; color: #004a8b; }
 
-    .testimonials .testimonial {
-      background: url("./images/testimonials-bg.png") no-repeat;
-      background-size: 100% 100%;
-      padding: 20px;
-    }
+    .testimonials .testimonial { background: url("./images/testimonials-bg.png") no-repeat; background-size: 100% 100%; padding: 20px; }
 
-    .testimonials .testimonial p{
-      font-weight: bold;
-      font-style: italic;
-    }
+    .testimonials .testimonial p{ font-weight: bold; font-style: italic; }
 
-    .testimonials p.author {
-      text-align: right;
-      margin-top: 20px;
-    }
+    .testimonials p.author { text-align: right; margin-top: 20px; }
 
-    .entry {
-      margin: 20px auto 35px;
-    }
+    .entry { margin: 20px auto 35px; }
+
     .entry-links {width: 1060px; max-width: 90%; margin: 0 auto;}
-    @media (max-width: 768px) {
-      .entry-links { max-width: 100%; background: #f2f2f2; display: block; height: 40px; padding: 8px 10px; margin: 0 auto;}
-    }
-    .entries-link {
-      font-family: 'Raleway', sans-serif;
-      font-size: 18px;
-      color: #004a8b;
-      font-weight: bold;
-    }
+    @media (max-width: 768px) { .entry-links { max-width: 100%; background: #f2f2f2; display: block; height: 40px; padding: 8px 10px; margin: 0 auto;} }
+
+    .entries-link { font-family: 'Raleway', sans-serif; font-size: 18px; color: #004a8b; font-weight: bold; }
     /*vwo*/ /*vwo*/
   </style>
 </head>
