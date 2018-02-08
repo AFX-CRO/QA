@@ -50,7 +50,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/siema@1.4.14/dist/siema.min.js"></script>
   <script>
-    new Siema(selector: '.testimonials');
+    new Siema({ selector: '.testimonials', perPage: 3 });
   </script>
   <!--=====  / SCRIPT ====-->
   <!--=====  CSS ====-->
@@ -161,6 +161,18 @@
 
         <button class="prev">prev</button>
         <div class="testimonials">
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
           <div class="col-sm-4">
             <div class="testimonial">
               <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
