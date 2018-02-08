@@ -48,6 +48,7 @@
 
   <!--=====  SCRIPT ====-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/siema@1.4.14/dist/siema.min.js"></script>
   <!--=====  / SCRIPT ====-->
   <!--=====  CSS ====-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -122,12 +123,19 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7700', endColorstr='#ea5800',GradientType=0 ); /* IE6-9 */
     }
 
-    .testimonials { width: 100%; max-width: 1760px; margin: 20px auto 40px;
-    }
+    .testimonials { width: 100%; max-width: 1760px; margin: 20px auto 40px; position: relative;}
+
+    .testimonials button:nth-of-type(1) { position: absolute; left: 0; top: 34%; }
+
+    .testimonials button:nth-of-type(2) { position: absolute; right: 0; top: 34%; }
 
     .testimonials p{ font-family: 'Raleway', sans-serif; font-size: 22px; color: #004a8b; }
 
-    .testimonials .testimonial { background: url("./images/testimonials-bg.png") no-repeat; background-size: 100% 100%; padding: 20px; }
+    .testimonials .testimonial { background: url("./images/testimonials-bg.png") no-repeat; background-size: 100% 100%; padding: 20px; margin: 15px;}
+    @media (max-width: 768px) { .testimonials div { width: 95% !important; margin: 0px auto; } }
+
+    .testimonials button { border: 0; border-radius: 3px; background: #004a8b;; color: #fff; opacity: 0.8; }
+    @media (max-width: 768px) { .testimonials button { display: none; } }
 
     .testimonials .testimonial p{ font-weight: bold; font-style: italic; }
 
@@ -135,7 +143,7 @@
 
     .entry { margin: 20px auto 35px; }
 
-    .entry-links { width: 1060px; max-width: 90%; margin: 0 auto; height: 40px; }
+    .entry-links { width: 1060px; max-width: 90%; margin: 0 auto;  height: 40px; }
     @media (max-width: 768px) { .entry-links { max-width: 100%; background: #f2f2f2; display: block; padding: 8px 10px; margin: 0 auto;} }
 
     .entries-link { font-family: 'Raleway', sans-serif; font-size: 18px; color: #004a8b; font-weight: bold; }
@@ -155,19 +163,31 @@
         <a class="btn btn-main" href="">Add To Order</a>
 
         <div class="testimonials">
-          <div class="col-sm-4">
+          <div class="">
             <div class="testimonial">
               <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
             </div>
             <p class="author">- Joe Schmo, Austin, TX</p>
           </div>
-          <div class="col-sm-4">
+          <div class="">
             <div class="testimonial">
               <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
             </div>
             <p class="author">- Joe Schmo, Austin, TX</p>
           </div>
-          <div class="col-sm-4">
+          <div class="">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
+          <div class="">
+            <div class="testimonial">
+              <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
+            </div>
+            <p class="author">- Joe Schmo, Austin, TX</p>
+          </div>
+          <div class="">
             <div class="testimonial">
               <p>“Testimonial example text looks like this. It looks just like this. And goes on for a little bit.”</p>
             </div>
@@ -221,5 +241,34 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const siemas = document.querySelectorAll('.testimonials');
+
+    // Extend prototype with method that adds arrows to DOM
+    // Style the arrows with CSS or JS — up to you mate
+    Siema.prototype.addArrows = function() {
+
+      // make buttons & append them inside Siema's container
+      this.prevArrow = document.createElement('button');
+      this.nextArrow = document.createElement('button');
+      this.prevArrow.textContent = '<<';
+      this.nextArrow.textContent = '>>';
+      this.selector.appendChild(this.prevArrow)
+      this.selector.appendChild(this.nextArrow)
+
+      // event handlers on buttons
+      this.prevArrow.addEventListener('click', () => this.prev());
+      this.nextArrow.addEventListener('click', () => this.next());
+    }
+
+    for(const siema of siemas) {
+      const instance = new Siema({
+        selector: siema,
+        perPage: 3
+      });
+      instance.addArrows();
+    }
+  </script>
 </body>
 </html>
