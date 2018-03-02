@@ -64,7 +64,7 @@
       <header>
 
         <div class="content">
-          <div class="row">
+          <div class="row fix-overflow">
             <div class="col-sm-3 hidden-xs">
               <img src="./images/project-prophesy.png" class="img-responsive logo" />
             </div>
@@ -812,6 +812,7 @@
       .toggle .toggle-title.active i::after { line-height: 20px; }
       .toggle .toggle-title .title-name { margin-left: 10px; }
     }
+    @media (max-width: 768px) { .fix-overflow { margin: 0; } }
   </style>
   <script>
     if( jQuery(".toggle .toggle-title").hasClass('active') ){
