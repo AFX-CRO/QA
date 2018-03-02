@@ -1,0 +1,829 @@
+
+<html>
+<head>
+  <meta charset="utf-8" /> <!-- for working locally -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Order Form</title>
+
+  <!--=====|||||     Scripts to Remove on Iris  |||||=====-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <!--=====|||||     Scripts to Remove on Iris  |||||=====-->
+
+
+   <!--=====|||||     Scripts to Stay  |||||=====-->
+    <script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/promo_function.js"></script>
+  <!--=====|||||     Scripts to Stay  |||||======-->
+
+
+    <!--===== /Exitpop Script =====-->
+    <script>
+      setTimeout(function(){
+        function addEvent(obj, evt, fn) {
+           if (obj.addEventListener) {
+               obj.addEventListener(evt, fn, false);
+           }
+           else if (obj.attachEvent) {
+               obj.attachEvent("on" + evt, fn);
+           }
+        }
+        addEvent(document, "mouseout", function(e) {
+           e = e ? e : window.event;
+           var from = e.relatedTarget || e.toElement;
+           if (!from || from.nodeName == "HTML") {
+              $('#popmessage').show();
+              $('#popmessage').trigger('lytics_event');
+              $('#popmessage').children().show();
+            }
+        });
+        $('#exitButton,#watch_video').click(function(){
+          $('#popmessage').hide();
+          $('#popmessage').children().hide();
+          $('#popmessage').remove();
+        });
+     }, 60000);
+    </script>
+  <!--===== /Exitpop Script =====-->
+
+  <!--=====  SCRIPT ====-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/siema@1.4.14/dist/siema.min.js"></script>
+  <!--=====  / SCRIPT ====-->
+  <!--=====  CSS ====-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--=====  / CSS ====-->
+  <!--=====  Fonts ====-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,800" rel="stylesheet">
+  <!--=====  / Fonts ====-->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <header>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-3 hidden-xs">
+              <img src="./images/project-prophesy.png" class="img-responsive logo" />
+            </div>
+            <div class="col-sm-6 col-xs-6 countdown">
+              <p><strong>Time Left To Order</strong></p>
+              <img src="./images/count-down.png" class="img-responsive center-block" />
+              <p><strong>And Save $1,000</strong></p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <img src="./images/contact.png" class="img-responsive pull-right contact-info" />
+            </div>
+          </div>
+        </div>
+        
+      </header>
+      <!-- header -->
+
+      <div class="content">
+        <img src="./images/order-form-hero-img.jpg" class="img-responsive hidden-xs" />
+        <img src="./images/order-form-hero-img-mobile.jpg" class="img-responsive visible-xs" />
+
+        <div class="content-inner">
+        
+          <h1><span>Welcome to</span>
+          Jim Rickards’<br /> Project Prophesy</h1>
+          
+          <p>Congratulations! If you’re reading this, it means we still have some spots left.</p>
+
+          <p>That means you’ll have the chance to get ahead of BIG market moves…</p>
+
+          <p>And walk away with an average of $15,760…every two weeks!</p>
+
+          <p>And you can get started as soon as you receive the secure link called <strong>Declassified: How to Make $15,760 From Your First Prophesy Trade.</strong></p>
+
+          <p>The Prophesy system has just flashed green.</p>
+
+          <p>Inside that email, you’ll find all the details on this play that could put as much as $15,760 in your pocket in the next two weeks.</p>
+
+          <p>And that’s just the beginning…</p>
+
+          <p>As a member of <i>Jim Rickards’ Project Prophesy</i>, you’ll get one new recommendation every other Tuesday….</p>
+
+          <p>Giving you the chance to pocket a BIG payday every other week.</p>
+
+          <p>Like I showed you today, I’ll soon be selling access to institutional clients for an annual fee of $5 million.</p>
+
+          <p>But with Jim Rickards’ Project Prophesy, you will NOT have to pay anything close to that…</p>
+
+          <p>Because I’ve designed this for everyday folks like you… with the list price for a one-year subscription of just $3,000.</p>
+
+          <p>Here's the best part...</p>
+
+          <p>Since this is a charter membership, today you can get one year of Jim Rickards’ Project Prophesy for only $2,000.</p>
+
+          <p>That’s $1,000 off the retail price!</p>
+
+          <p>For what could add up to the chance to make $5,320, $7,130, and even $39,640 in a matter of days.</p>
+
+          <p>And do it over and over again.</p>
+
+          <p>Just to recap… here is...</p>
+
+          <h1>What you get<br /> when you join us:</h1>
+
+        </div>
+        <!-- .content-inner -->
+
+        <div class="products">
+          <div class="product">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="./images/email-rec-min.png" alt="email record" class="img-responsive center-block" />
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  <span class="bigger-paragraph">New Trade Recommendation EVERY Other Tuesday.</span> Every other Tuesday, 
+                  I’ll recommend a new money-multiplier contract. The analysis will walk you through our research and 
+                  everything you need to do to potentially make $15,760… in less than two weeks… and do it over and 
+                  over again.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/phone-min.png" alt="email record" class="img-responsive center-block no-margin negative" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                    <span class="bigger-paragraph">My Private Phone Call.</span> You can receive a message from me every 
+                    time Prophesy triggers a buy.
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/apps-min.png" alt="email record" class="img-responsive center-block no-margin" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                      <span class="bigger-paragraph">FREE exclusive access to The Prophesy App</span>. The Prophesy System App is currently under development. 
+                      As of right now, we’re NOT planning to sell this app anywhere. We’re only going to grant access to 
+                      “partners” of Jim Rickards’ Project Prophesy.
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/securelink-min.png" alt="email record" class="img-responsive center-block" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                      <span class="bigger-paragraph">FREE secure link with the subject line of: Declassified: How to Make $15,760 From 
+                      Your First Project Prophesy Trade.</span>
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/report-xfiles-min.png" alt="email record" class="img-responsive center-block no-margin" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                      <span class="bigger-paragraph">FREE guide The Project Prophesy X-Files</span>.
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/videoseries-min.png" alt="email record" class="img-responsive center-block no-margin" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                      <span class="bigger-paragraph">FREE The Project Prophesy 6-Part Video Series</span> to help you get started 
+                      right away.
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/alert-min.png" alt="email record" class="img-responsive center-block no-margin" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                     <span class="bigger-paragraph">Urgent Anytime Profit-Taking Alerts.</span> When it’s finally time to 
+                     take gains, we’ll blast you out an urgent email – telling you exactly what to sell, for what 
+                     potential gain. It couldn’t be easier.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/port-min.png" alt="email record" class="img-responsive center-block no-margin" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                    <span class="bigger-paragraph">Regular Model Portfolio Updates.</span> Whenever something important 
+                    happens, we’ll send you a recap of our open trades and what to do with them.
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+          <div class="product">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="./images/sweeps-min.png" alt="email record" class="img-responsive center-block no-margin" />
+                </div>
+                <div class="col-sm-8">
+                  <p>
+                    <span class="bigger-paragraph highlight">Free Unadvertised Bonus.</span> A subscription to our daily 
+                    e-letters, The Daily Reckoning, The 5 Min. Forecast, The Daily Proof, and America Uncensored.
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+            <!-- .product -->
+        </div>
+        <!-- .products -->
+
+        <div class="content-inner">
+          <h2>Remember, For Reasons Of National Security I Want to Get This in the Hands of a Very Small Group of People.</h2>
+        
+          <p>That&rsquo;s why I&rsquo;m giving &ldquo;clearance&rdquo; to only 1,000 people today.</p>
+
+          <p>After we reach that limit, I&rsquo;ll have to shut it down.</p>
+
+          <p>This is a serious offer...</p>
+
+          <p>With the potential to generate tens of thousands of dollars in two weeks or less&#8230;</p>
+
+          <p>For serious readers only.</p>
+
+          <p>If that&rsquo;s you, then fill out the form to the right and we&rsquo;ll send you everything we&rsquo;ve promised here today&#8230;</p>
+
+          <p>And also remember&#8230;</p>
+
+          <h2>This Is All Backed by <br />My Profit Guarantee</h2>
+
+          <p><img src="./images/guarentee.png" alt="Guarentee" class="pull-left guarentee-img" /> <strong>We guarantee that our model portfolio will give you the chance to double your money at least 10 times over the next year.</strong></p>
+
+          <p>If we don&rsquo;t&#8230; just give us a call to claim an extra year of Project Prophesy on us &ndash; no charge to you.</p>
+
+          <p>Don&rsquo;t waste any time.</p>
+
+          <p>I expect the 1,000 spots to be filled fast.</p>
+
+          <p>I hope you'll be one of the lucky ones who will get in. All you have to do is fill out the easy form to the right.</p>
+
+          <p>You'll get an email that confirms access almost immediately.</p>
+
+          <p>You'll also get details on how to access everything I&rsquo;ve promised here.</p>
+
+          <p>I fully believe this is the ONLY way for the little guy to profit from unexpected political and economic events.</p>
+
+          <p>To your wealth,</p>
+
+          <img src="./images/sign.jpg" alt="" />
+
+          <p>Jim Rickards <br />
+              Founder, Project Prophesy</p>
+        </div>
+        <!-- .content-inner -->
+
+        <!-- form-section -->
+        <div class="form-section">
+          <div class="steps"><strong>Step #1:</strong> Choose Your Subscription</div>
+
+          <div class="content-inner">
+
+            <p class="checkbox"><img src="./images/checkbox.png" /> One year for just <strike>$3,000</strike> $2,000 (save $1,000 for 
+            a limited time only)</p>
+
+            <p><strong>Billing Terms:</strong> Once you accept your <strong><i>Rickards' Project Prophesy</i></strong> subscription, your credit card will be 
+              billed immediately. Then, when your subscription is about to expire, we will automatically bill your 
+              card for another term at the same rate. But please note -- with the money I’ve earmarked for this project, 
+              I simply cannot offer any refunds.</p>
+          
+            </div>
+
+          <form class="form-horizontal">
+            <div class="steps"><strong>Step #2:</strong> Enter Your Name & Email</div>
+            
+            <div class="forms">
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>First Name:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="last_name" class="col-sm-5"><span class="red-text">*</span>Last Name:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="last_name" name="last_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="col-sm-5"><span class="red-text">*</span>Email:</label>
+                <div class="col-sm-7">
+                  <input type="email" class="form-control" id="email" name="email" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="re_email" class="col-sm-5"><span class="red-text">*</span>Retype Email:</label>
+                <div class="col-sm-7">
+                  <input type="re_email" class="form-control" id="re_email" name="re_email" />
+                </div>
+              </div>
+
+            </div>
+            <!-- .forms -->
+
+            <div class="steps"><strong>Step #3:</strong> Enter Your Mailing Address</div>
+
+            <div class="forms">
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Address 1:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">&nbsp;</span>Address 2:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>City:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>City:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>State:</label>
+                <div class="col-sm-7">
+                  <select class="form-control">
+                    <option>Select A State</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Zip/Postal Code:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Country:</label>
+                <div class="col-sm-7">
+                  <select class="form-control">
+                    <option>United States</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Phone:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="custom-checkbox">
+                <center>
+                  <label for="address_checker">
+                    <input type="checkbox" id="address_checker" name="address_checker" checked />
+                    <span></span>
+                    <b>Uncheck to ship to a different address.</b>
+                  </label>
+                </center>
+              </div>
+
+              <p class="text-center">You purchase may be sunject <br />to state sales tax. </p>
+
+              <p><img src="./images/mcafee-secure.jpg" alt="McAfee Secure" class="center-block" /></p>
+
+              <div class="row radio-box">
+                <div class="col-xs-5">
+                  <div class="custom-radio">
+                    <label>
+                      <img src="./images/visa.jpg" alt="Visa" /> 
+                      <input type="radio" class="default-checkbox" /> 
+                       <span></span> 
+                       Visa
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-7">                  
+                  <div class="custom-radio">
+                    <label>
+                      <img src="./images/mc.jpg" alt="MasterCard" /> 
+                      <input type="radio" class="default-checkbox" /> 
+                       <span></span> 
+                       MasterCard
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row radio-box">
+                <div class="col-xs-5">
+                  <div class="custom-radio">
+                    <label>
+                      <img src="./images/discover.jpg" alt="Discover" /> 
+                      <input type="radio" class="default-checkbox" /> 
+                       <span></span> 
+                       Discover
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-7">
+                  <div class="custom-radio">
+                    <label>
+                      <img src="./images/amex.jpg" alt="American Express" /> 
+                      <input type="radio" class="default-checkbox" /> 
+                       <span></span> 
+                       American Express
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .forms -->
+
+            <div class="forms">
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Card Number:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Expiration Month:</label>
+                <div class="col-sm-7">
+                  <select class="form-control">
+                    <option>Secect a Month</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5"><span class="red-text">*</span>Expiration Year:</label>
+                <div class="col-sm-7">
+                  <select class="form-control">
+                    <option>Secect a Year</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5">Card Security Code:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+              
+              <p><a href="">What's my CVV code?</a></p>
+
+            <div class="custom-checkbox white">
+              <label class="small-text" for="save_credit_card">
+                <input type="checkbox" id="save_credit_card" />
+                <span></span> 
+                Check this box if you'd like to save this credit card for future purchases
+              </label>
+            </div>
+
+              <div class="form-group">
+                <label for="first_name" class="col-sm-5 small-text text-right">Credit card name:</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="first_name" name="first_name" />
+                </div>
+              </div>
+
+              <input type="submit" value="Continue" class="button submit"/>
+            </div>
+            <!-- .forms -->
+
+          </form>
+
+        </div>
+        <!-- .form-section -->
+
+        <div class="content-inner">
+          <p class="text-center">Your Promotion Code is: ERITU220</p>
+
+          <h2 class="blue-text" style="margin-bottom: 30px;">P.S. Still have questions? Then check out my answers to some of our most frequently asked questions below…</h2>
+        </div>
+
+        <div class="toggle">
+          <div class="toggle-title ">
+            <h3>
+            <i></i>
+            <span class="title-name">Do I Need a Lot of Money to Get Started?</span>
+            </h3>
+          </div>
+          <div class="toggle-inner">
+            <p>Details coming soon</p>
+          </div>
+        </div><!-- END OF TOGGLE -->
+
+        <div class="toggle">
+          <div class="toggle-title ">
+            <h3>
+            <i></i>
+            <span class="title-name">How Often Can I Expect to Receive an Alert?</span>
+            </h3>
+          </div>
+          <div class="toggle-inner">
+            <p>Details coming soon</p>
+          </div>
+        </div><!-- END OF TOGGLE -->
+        
+        <div class="toggle">
+          <div class="toggle-title ">
+            <h3>
+            <i></i>
+            <span class="title-name">Can I Place These Prophesy Trades in My IRA?</span>
+            </h3>
+          </div>
+          <div class="toggle-inner">
+            <p>Details coming soon</p>
+          </div>
+        </div><!-- END OF TOGGLE -->
+        
+        <div class="toggle">
+          <div class="toggle-title ">
+            <h3>
+            <i></i>
+            <span class="title-name">Who Can I Contact if I Have a Question?</span>
+            </h3>
+          </div>
+          <div class="toggle-inner">
+            <p>Details coming soon</p>
+          </div>
+        </div><!-- END OF TOGGLE -->
+
+        <a class="button submit link">Click Here To Get Started Today</a>
+
+      </div>
+      <!-- .content -->
+      
+    </div>
+  </div>
+
+  <style>
+    body { font-family: 'Raleway', sans-serif; font-size: 26px; overflow-x: hidden; }
+    @media (max-width: 768px){ body{  font-size: 16px; } }
+    
+    /* .content { max-width: 1565px; width: 81.5%; margin: 0px auto; } */
+    .content { max-width: 1565px; width: 81.5%; margin: 0px auto; }
+    @media (max-width: 1060px) { .content { width: 100%; margin: 0px auto; } }
+
+    .content-inner { width: 90%; margin: 0px auto; }
+    
+    header { background-color: #c2d5e5; padding: 5px 0; }
+
+    p { margin-bottom: 25px; }
+    
+    .countdown p { font-size: 22px; color: #072846; text-align: center; margin: 0; }
+    @media (max-width: 768px) {.countdown p {font-size: 16px; }}
+    
+    h1 { font-family: 'Raleway', sans-serif; font-size: 72px; font-weight: 800; text-align: center; color: #072846; text-transform: uppercase; }
+    
+    h1 span { font-size: 42px; font-style: italic; font-weight: 400; display: block; margin-bottom: 20px; }
+    @media (max-width: 768px){ h1{  font-size: 32px; } h1 span { font-size: 20px; margin-bottom: 0;} }
+
+    h2 { font-family: 'Raleway', sans-serif; font-size: 58px; font-weight: 700 ; text-align: center; color: #072846; margin-bottom: 20px; }
+    @media (max-width: 768px){ h2{  font-size: 32px; } }
+
+    .highlight { background: #ffff00; }
+
+    .logo, .contact-info { margin-top: 20px; }
+    @media (max-width: 768px) {.logo, .contact-info { margin-top: 5px; }}
+
+    .bigger-paragraph { font-size: 40px; font-weight: bold; line-height: 48px; }
+    @media (max-width: 768px){ .bigger-paragraph { font-size: 25px; line-height:30px; display: block; text-align: center; margin: 10px 0; } }
+    
+    .products { border-top: 10px solid #00478d; border-bottom: 10px solid #00478d; position: relative; }
+
+    .products:before { content: ""; width:0px; height:0px; border-left:20px solid transparent;  border-right:20px solid transparent; border-top:10px solid #004a8b;  position:absolute; top: 0px; left: 50%; margin-left: -12px; }
+
+    .products:after { content: ""; width:0px; height:0px; border-left:20px solid transparent;  border-right:20px solid transparent; border-top:10px solid #004a8b;  position:absolute; bottom: -20px; left: 50%; margin-left: -12px; }
+
+    .product { background: #c2d5e5; padding: 25px; }
+
+    .products .product:nth-child(even){ background: #d5e1ec; }
+
+    .product img { margin-top: 15px; }
+    
+    .product img.no-margin { margin-top: 0; }
+    
+    .product img.negative { margin: -18px auto; }
+    @media (max-width: 768px){ .product img.no-margin { margin-top: 15px; } .product img.negative { margin: 0 auto } }
+    
+    .pull-left { margin-right: 20px; }
+
+    .form-section .steps { font-size: 48px; text-align: center; width: 100%; background: #00478d; color: #fff; padding: 10px; position: relative; }
+
+    .form-section .steps:after { content: ""; width:0px; height:0px; border-left:20px solid transparent;  border-right:20px solid transparent; border-top:10px solid #004a8b;  position:absolute; bottom: -10px; left: 50%; margin-left: -12px; }
+    @media (max-width: 768px){ .form-section .steps { font-size: 20px; padding: 10px 0; } .form-section .steps:after { bottom: -8px; }}
+
+    .checkbox { color: #3b99fc; font-weight: bold; text-align: center; margin: 30px; cursor: pointer; }
+    @media (max-width: 768px) { .checkbox { margin: 10px 0; } .checkbox img { width: 20px; } }
+
+    .checkbox strike { color: #ff2222; } 
+
+    .forms .small-text { font-size: 18px; }
+
+    .forms { width: 600px; max-width: 90%; margin: 50px auto; font-size: 22px; }
+
+    .forms label { font-weight:  normal; font-size: 22px; }
+
+    .forms label img { margin-right: 10px; }
+    @media (max-width: 768px) { .forms { margin: 20px auto; } .forms label img { height: 28px; margin-left: -10px; margin-right: 12px; }}
+
+    .forms label .red-text { color: #ff2e2f; font-size: 40px; line-height: 0; position: relative; top: 10px; }
+
+    @media (max-width: 768px) { .forms label { font-size: 16px; } .forms label .red-text { top: 19px; }}
+
+    .forms select { font-size: 22px; padding-top: 1px; background: #f8f8f8; border-radius: 8px; margin-left: -15px; width: 375px;}
+    @media (max-width: 768px) { .forms select { font-size: 20px; margin-left: 0; max-width: 100%; } }
+
+    .custom-checkbox { position: relative; margin: 20px auto; cursor: pointer; } 
+    .custom-checkbox span { width: 23px; height: 24px; cursor: pointer; position: absolute; top: 4px; left: 70px; background: #3a98fc; border-radius: 4px; } 
+    .custom-checkbox span:after { content: ''; width: 14px; height: 6px; position: absolute; top: 7px; left: 5px; border: 2px solid #fff; border-top: none; border-right: none; background: transparent; opacity: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); } 
+    .custom-checkbox span:hover { opacity: 0.5; } 
+    .custom-checkbox input[type=checkbox] { visibility: hidden; } 
+    .custom-checkbox input[type=checkbox]:checked + span:after { opacity: 1; } 
+    .custom-checkbox.white span {
+    width: 21px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    }
+    .custom-checkbox.white span:after { content: ''; width: 13px; height: 6px; position: absolute; top: 6px; left: 3px; border: 2px solid #999; border-top: none; border-right: none; background: transparent; opacity: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); } 
+    .default-radio { width: 20px; height: 20px; }
+    @media (max-width: 768px) {.custom-checkbox span {left: 2px; top: 0; }}
+
+    .custom-radio { position: relative; margin: 20px auto; cursor: pointer; } 
+    .custom-radio span { width: 18px; height: 18px; cursor: pointer; position: absolute; top: 6px; left: 62px; background: #fff; border-radius: 50%; border:1px solid #999;} 
+    .custom-radio span:after { content: ''; width: 8px; height: 8px; position: absolute; top: 4px; left: 4px; background: #333; border-radius: 50%; opacity: 0; } 
+    .custom-radio span:hover { opacity: 0.5; } 
+    .custom-radio input[type=radio] { visibility: hidden; } 
+    .custom-radio input[type=radio]:checked + span:after { opacity: 1; } 
+    @media (max-width: 768px) { .radio-box { margin-right: -10px; } .custom-radio { margin: 0px auto;} .custom-radio span { left: 42px; } }
+
+    .button.submit { 
+      width: 100%;
+      border:0px solid #be6209; -webkit-border-radius: 8px; -moz-border-radius: 8px;
+      border-radius: 8px;font-size:36px;
+      font-family: 'Raleway', sans-serif; 
+      padding: 24px 24px 24px 24px; 
+      text-decoration:none; 
+      font-weight:bold; 
+      font-style: italic;
+      color: #FFFFFF;
+      background-color: #F37D0C; 
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#F37D0C), to(#EF5800));
+      background-image: -webkit-linear-gradient(top, #F37D0C, #EF5800);
+      background-image: -moz-linear-gradient(top, #F37D0C, #EF5800);
+      background-image: -ms-linear-gradient(top, #F37D0C, #EF5800);
+      background-image: -o-linear-gradient(top, #F37D0C, #EF5800);
+      background-image: linear-gradient(to bottom, #F37D0C, #EF5800);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F37D0C, endColorstr=#EF5800);
+    }
+
+    .button.link { margin: 40px auto; text-align: center; display: block; width: 610px; max-width: 90%; }
+
+    @media (max-width: 768px ) { .button.submit { font-size: 20px; line-height: 4px; } .button.link { line-height: 4px; margin-top: 20px;} }
+
+    .blue-text { color: #004a8b; }
+
+     @media (max-width: 768px) {
+       .guarentee-img.pull-left { float: none !important; margin: 0 auto 20px; width: 200px; display: block; } 
+    }
+
+    /* Styles for Accordion */
+    .toggle { padding: 10px 20px 10px 80px; background: #c2d5e5; }
+    .toggle:nth-child(odd) { background: #d5e1ec; }
+    .toggle .toggle-title {
+      position: relative;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .toggle .toggle-title h3 {
+      font-size: 36px;
+      margin: 0px;
+      line-height: 1;
+      cursor: pointer;
+      font-weight: 400;
+      color: #004a8b;
+    }
+    .toggle .toggle-inner {
+      padding: 7px 25px 10px 25px;
+      display: none;
+      margin: -7px 0 6px;
+    }
+    .toggle .toggle-inner div {
+      max-width: 100%;
+    }
+    .toggle .toggle-title .title-name {
+      display: block;
+      padding: 25px 25px 14px;
+    }
+    .toggle .toggle-title i::after {
+      content: "+";
+      font-size: 50px;
+      line-height: 35px;
+      position: absolute;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      margin: 20px;
+      border-radius: 50%;
+      left: 0;
+      border: 5px solid #004a8b;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-weight: bold;
+      color: #004a8b;
+      margin-top: 24px;
+      margin-left: -20px;
+    }
+    
+    .toggle .toggle-title.active i::after {
+      content: "-";
+      line-height: 27px;
+    }
+    @media (max-width: 768px) {
+      .toggle { padding: 10px 20px; }
+      .toggle .toggle-title i::after { content: "+"; font-size: 40px; line-height: 27px; position: absolute; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; margin: 20px; border-radius: 50%; left: 0; border: 5px solid #004a8b; width: 35px; height: 35px; text-align: center; font-weight: bold; color: #004a8b; margin-top: 24px; margin-left: 0; }
+      .toggle .toggle-title h3 { font-size: 20px; margin-left: 10px; }
+      .toggle .toggle-title.active i::after { line-height: 20px; }
+      .toggle .toggle-title .title-name { margin-left: 10px; }
+    }
+  </style>
+  <script>
+    if( jQuery(".toggle .toggle-title").hasClass('active') ){
+      jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
+    }
+    jQuery(".toggle .toggle-title").click(function(){
+      if( jQuery(this).hasClass('active') ){
+        jQuery(this).removeClass("active").closest('.toggle').find('.toggle-inner').slideUp(200);
+      }
+      else{	jQuery(this).addClass("active").closest('.toggle').find('.toggle-inner').slideDown(200);
+      }
+    });
+  </script>
+</body>
+</html>
